@@ -1,0 +1,142 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+hr{
+	border-top: 2px solid rgb(177, 255, 184);
+}
+
+p{
+    font-size: 22px;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+}
+
+#SideNav{
+    width:250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgb(177, 255, 184);
+    z-index: 2;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(97, 31, 31);
+}
+
+#Menu{
+    width:50px;
+    position:fixed;
+    right:65px;
+    top:35px;
+    z-index: 2;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.Projects{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ProjectsBack{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../Images/WallPaper2.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.LeftCol{
+    flex-basis: 50%;
+}
+.LeftColText{
+    float: left;
+    text-align: justify;
+    text-align-last: center;
+    max-width: 80%;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: rgb(177, 255, 184);
+    border-radius: 5px;
+}
+.LeftCol img{
+    margin-left: 100px;
+    max-width: 80%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(177, 255, 184);
+}
+.LeftCol video{
+    margin-left: 100px;
+    max-width: 70%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(177, 255, 184);
+}
+
+.RightCol{
+    flex-basis: 50%;
+}
+.RightColText{
+    float: right;
+    text-align: justify;
+    text-align-last: center;
+    max-width: 100%;
+    margin-Right: 280px;
+    padding: 10px;
+    background-color: rgb(177, 255, 184);
+    border-radius: 5px;
+}
+.RightCol img{
+    margin-right: 280px;
+    max-width: 70%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(177, 255, 184);
+}
+.RightCol video{
+    margin-right: 280px;
+    max-width: 70%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(177, 255, 184);
+}
+
+#RS232{
+    width: 70%;
+}
+#RobotImg{
+    width: 50%;
+   max-width: 30%;
+}
+#RobotTXT{
+    margin-left: 200px;
+}
