@@ -23,7 +23,7 @@ h2{
 
 #SideNav{
     width:250px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     right: -250px;
     top: 0;
@@ -61,12 +61,11 @@ nav ul li a{
     flex-wrap: wrap;
 }
 .ProjectsBack{
-    padding: 100px 0;
+    padding: 100px 0px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     background-image: url("../Images/WallPaper2.jpg");
-    background-repeat: no-repeat;
     background-size:100%;
 }
 
@@ -84,7 +83,7 @@ nav ul li a{
     border-radius: 5px;
 }
 .LeftCol img{
-    margin-left: 100px;
+    margin-left: 10%;
     max-width: 80%;
     display: inline-block;
     padding: 10px;
@@ -107,15 +106,15 @@ nav ul li a{
     float: right;
     text-align: justify;
     text-align-last: center;
-    max-width: 100%;
-    margin-Right: 280px;
+    width: 80%;
+    margin-Right: 20%;
     padding: 10px;
     background-color: rgb(177, 255, 184);
     border-radius: 5px;
 }
 .RightCol img{
-    margin-right: 280px;
-    max-width: 70%;
+    margin-right: 25%;
+    width: 75%;
     display: inline-block;
     padding: 10px;
     border-radius: 5px;
@@ -138,5 +137,5 @@ nav ul li a{
    max-width: 30%;
 }
 #RobotTXT{
-    margin-left: 200px;
+    margin-left: 50%;
 }
