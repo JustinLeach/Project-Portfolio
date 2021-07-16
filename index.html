@@ -16,6 +16,8 @@
         <ul>
             <li><a href="#AboutMe">About Me</a></li>
             <li><a href="#EmbeddedControllerPCB">Embedded Controller PCB</a></li>
+            <li><a href="#SafeCycle">Safe Cycle Capstone</a></li>
+            <li><a href="#CapstoneExtension">Computer Vision Capstone Extension</a></li>
             <li><a href="#TestRobot">Test Robot</a></li>
             <li><a href="#Elevator">Elevator Project</a></li>
             <li><a href="#RS232Transceiver">RS232 Transceiver</a></li>
@@ -41,7 +43,7 @@
                      project-based learning with software and hardware, as well as all the theory associated with it.  Almost all of the projects completed in this program require designing and implementing software to control hardware circuits. 
                      We use tools such as multi-meters, oscilloscopes and simulation software to troubleshoot the circuits.  I have learned a mix of programming as well as designing and implementing hardware.<br><br>
                     I have always had a strong interest in electronics and the way machines work. I created my first major project when I was in grade 10 - a 4-bit calculator using digital logic chips and a breadboard. Since then I have made 
-                     countless other projects including an FM radio transmitter, RC vehicles, an audio amplifier and a professional Microcontroller breakout board. I have a lot of experience, knowledge and passion for this field and I know I 
+                     countless other projects including an FM radio transmitter, RC vehicles, a few audio amplifiers and a professional Microcontroller breakout board. I have a lot of experience, knowledge and passion for this field and I know I 
                      will continue to learn and contribute throughout my career.  The folloiwng pages showcase some of the many projects I have created.</p>
             </div>
         </div>
@@ -67,39 +69,70 @@
             </div>
     </section>
 
-    <section class="ProjectsBack" id="TestRobot">
+    <section class="ProjectsBack" id="SafeCycle">
         <div class="LeftCol">
-            <video width="70%" height="70%" controls>
-                <source src="Images/Robot.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+            <img src="Images/SpiderWeb.jpg">
         </div>
 
         <div class="RightCol">
             <div class="RightColText">
-                <h2>Test Robot</h2>
-                <p>I created this Test Robot in my 5th semester at school. It is a robot that houses the microcontroller board I created the semester before and demonstrates the functionality of the board. The robot has 2 DC motors with encoders to 
-                    drive at specific speeds and distances using feedback control theory. The robot also has a stepper and servo motor to direct a built-in camera. The camera is connected to a Raspberry Pi and streamed over wifi to the controlling computer.
-                     An Xbox remote connected to the host computer running a program in C code, parses and sends commands to the robot's Raspberry Pi over a websocket. If the connection fails at any point, the robot will stop and terminate the connection.
-                      This was one of my favourite projects to create as it was both challenging and fun to complete.</p>
+                <h2>Safe Cycle Capstone</h2>
+                <p>For my final school project my group of 3 decided to make a smart bike and we called the project Safe Cycle. The project consists of an Arduino nano for the microcontroller, a custom made PCB, and a few other off the shelf modules. The 
+                    project will act as a normal bike computer telling you information such as speed and distance but it does much more. It connects to the user's cell phone using an app we created which shows all the information as well as a map and directions.
+                    It has a Lidar unit on the back to warn the rider of oncoming traffic and has signal, brake, and running lights. The project also has a security mode so if someone tries to steal the bike an alarm will sound from an SD card and text the user its GPS coordinates.
+                    The user can also text the bike to get the GPS coordinates. The project uses a lithium battery with well over 10 hour battery life and auto shut off at low cell voltage.</p>
+                    <p>This Photo is the current state of the project and is just a loosely wired prototype.</p>
             </div>
         </div>
     </section>
 
-    <section class="Projects" id="Elevator">
+    <section class="Projects" id="CapstoneExtension">
         <div class="LeftCol">
             <div class="LeftColText">
-                <h2>Elevator Project</h2>
-                <p>This project was done virtually during online school in a group of 3 students during my 6th semester. This project is a small working elevator controlled directly by Raspberry Pi and STM Nucleo development boards being controlled by our website. My team created
-                     the website in HTML, CSS, Java Script, PHP and SQL. The Raspberry Pi was running a C++ program written by us to move the elevator between floors by reading the SQL database and then transmitting over a CAN network to the STM Boards. The website
-                      itself had a few different pages for logging in, creating an account, moving the elevator, and an 'About the Project' page. There was also a diagnostics page to display everything in the SQL databases and update or insert new entries. </p>
+                <h2>Computer Vision Capstone Extension</h2>
+                <p>As an extension to our Capstone project, I created a computer vision program using python and open-cv libraries to detect people in front of the bike and to ring the bell automatically. The project also scans for the users face when in security mode to 
+                    unlock when they are detected. The project uses a Raspberry Pi 4, a camera and a few different open-source computer vision libraries and algorithms. This project was an exciting intro into the world of computer vision and AI and I'd like to learn more in the future.</p>
             </div>
         </div>
 
         <div class="RightCol">
-            <img src="Images/Elevator.png">
+            <img src="Images/OpenCV.png">
         </div>
 </section>
+
+<section class="ProjectsBack" id="TestRobot">
+    <div class="LeftCol">
+        <video width="70%" height="70%" controls>
+            <source src="Images/Robot.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </div>
+
+    <div class="RightCol">
+        <div class="RightColText">
+            <h2>Test Robot</h2>
+            <p>I created this Test Robot in my 5th semester at school. It is a robot that houses the microcontroller board I created the semester before and demonstrates the functionality of the board. The robot has 2 DC motors with encoders to 
+                drive at specific speeds and distances using feedback control theory. The robot also has a stepper and servo motor to direct a built-in camera. The camera is connected to a Raspberry Pi and streamed over wifi to the controlling computer.
+                 An Xbox remote connected to the host computer running a program in C code, parses and sends commands to the robot's Raspberry Pi over a websocket. If the connection fails at any point, the robot will stop and terminate the connection.
+                  This was one of my favourite projects to create as it was both challenging and fun to complete.</p>
+        </div>
+    </div>
+</section>
+
+<section class="Projects" id="Elevator">
+    <div class="LeftCol">
+        <div class="LeftColText">
+            <h2>Elevator Project</h2>
+            <p>This project was done virtually during online school in a group of 3 students during my 6th semester. This project is a small working elevator controlled directly by Raspberry Pi and STM Nucleo development boards being controlled by our website. My team created
+                 the website in HTML, CSS, Java Script, PHP and SQL. The Raspberry Pi was running a C++ program written by us to move the elevator between floors by reading the SQL database and then transmitting over a CAN network to the STM Boards. The website
+                  itself had a few different pages for logging in, creating an account, moving the elevator, and an 'About the Project' page. There was also a diagnostics page to display everything in the SQL databases and update or insert new entries. </p>
+        </div>
+    </div>
+
+    <div class="RightCol">
+        <img src="Images/Elevator.png">
+    </div>
+    </section>
 
 <section class="ProjectsBack" id="RS232Transceiver">
     <div class="LeftCol">
