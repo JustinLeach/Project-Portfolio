@@ -1,4 +1,4 @@
 # Project-Portfolio
 https://justinleach.github.io/Project-Portfolio/
 
-![Alt text](/Images/Cover.jpg?raw=true "Title")
+![Alt text](/Images/Cover.png?raw=true "Title")
